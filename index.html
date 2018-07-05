@@ -6,7 +6,10 @@
 	</head>
 	<body>
 
-		<h3>You keep using that word. I do not think it means what you think it means.</h3>
+		<h3 id="quote">
+			<span v-for="item in quotes">{{ item.quote }}<br /></span>
+			<!-- <span v-bind:title="princessBride.movie">{{princessBride.quote}}</span> -->
+		</h3>
 
 		<!-- development version, includes helpful console warnings -->
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
